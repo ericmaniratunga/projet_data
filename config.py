@@ -2,8 +2,9 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
+
 # Load .env from project root
-root = Path(__file__).resolve().parent.parent
+root = Path(__file__).resolve().parent
 load_dotenv(dotenv_path=root / ".env")
 
 DB_CONFIG = {
